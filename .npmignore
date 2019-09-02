@@ -1,0 +1,7 @@
+*.ts
+!*.d.ts
+**/*.spec.*
+**/*.test.*
+**/__tests__
+tsconfig.json
+types/

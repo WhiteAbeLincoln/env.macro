@@ -1,0 +1,33 @@
+{
+  "name": "env.macro",
+  "version": "1.0.0",
+  "description": "Inline environment variables at compile-time",
+  "main": "env.macro.js",
+  "types": "env.macro.d.ts",
+  "dependencies": {
+    "babel-plugin-macros": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.3",
+    "babel-plugin-tester": "^7.0.1",
+    "jest": "^24.9.0",
+    "typescript": "^3.6.2"
+  },
+  "scripts": {
+    "test": "jest env.macro.test.js",
+    "buildtest": "npm run build && npm run test",
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "keywords": [
+    "environment",
+    "macro",
+    "babel-plugin-macros",
+    "babel"
+  ],
+  "author": "Abraham White <abelincoln.white@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "verbose": true
+  }
+}
