@@ -4,6 +4,11 @@
   "description": "Inline environment variables at compile-time",
   "main": "env.macro.js",
   "types": "env.macro.d.ts",
+  "homepage": "https://github.com/WhiteAbeLincoln/env.macro#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WhiteAbeLincoln/env.macro.git"
+  },
   "dependencies": {
     "babel-plugin-macros": "^2.6.1"
   },
