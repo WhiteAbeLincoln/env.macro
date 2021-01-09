@@ -11,9 +11,10 @@ export default createMacro(({ references }) => {
       throw new MacroError('`env.macro` can only be used as a call expression')
     }
 
-    const args = parentPath.get('arguments')
+    const argument = parentPath.get('arguments')
+    const args = Array.isArray(argument) ? argument : [argument]
     if (args.length !== 1 || !args[0].isStringLiteral()) {
-      throw new MacroError('`env.macro` accepts a single string constant as its argument')
+      throw new MacroError('`env.macro` accepts a single string literal as its argument')
     }
 
     const env_name = args[0] as NodePath<t.StringLiteral>

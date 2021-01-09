@@ -3,7 +3,7 @@ import plugin from 'babel-plugin-macros'
 
 pluginTester({
   plugin
-  , babelOptions: { filename: __filename}
+  , babelOptions: { filename: __filename }
   , tests: [
     { title: 'replaces with process.env[\'NAME\'] if not exists'
     , code: `
@@ -12,7 +12,7 @@ pluginTester({
       let y = env("Another")
     `
     , output: `
-      let x = process.env['NAME'];
+      let x = process.env["NAME"];
       let y = process.env["Another"];
     `
     }
