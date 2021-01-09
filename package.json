@@ -1,6 +1,6 @@
 {
   "name": "env.macro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inline environment variables at compile-time",
   "main": "env.macro.js",
   "types": "env.macro.d.ts",
@@ -38,6 +38,9 @@
   "jest": {
     "verbose": true,
     "preset": "ts-jest",
-    "testMatch": [ "**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec|test).ts?(x)" ]
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)+(spec|test).ts?(x)"
+    ]
   }
 }
