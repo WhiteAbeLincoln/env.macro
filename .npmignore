@@ -5,3 +5,8 @@
 **/__tests__
 tsconfig.json
 types/
+*.tgz
+shell.nix
+.direnv/
+.github/
+.envrc
